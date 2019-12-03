@@ -1,0 +1,26 @@
+
+Showing logs for build [32mflexsquare-devops-init-app-mast-2tzr4-2[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-v7h29[0m
+{"level":"warn","ts":1575376881.7851646,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1575376881.7861488,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mflexsquare-devops-init-app-mast-2tzr4-2[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-ftsqx[0m
+{"level":"warn","ts":1575376882.989045,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1575376882.9904156,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mflexsquare-devops-init-app-mast-2tzr4-2[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mflexsquare-devops-init-app-mast-2tzr4-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-flexsquare-devops-init-app-mast-tr9qg[0m
+{"level":"warn","ts":1575376887.9980097,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1575376888.266146,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/**********/DevOps-Init-App.git @ v0.0.2 in path /workspace/source"}
+
+Showing logs for build [32mflexsquare-devops-init-app-mast-2tzr4-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:a69ad3c132be6ffdb097c9d2343494acaa33e2fe
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mflexsquare-devops-init-app-mast-2tzr4-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mflexsquare-devops-init-app-mast-2tzr4-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+2019/12/03 12:41:29 Error executing command: fork/exec /busybox/sh: permission denied
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-container-build'. The execution of the pipeline has stopped.[0m
